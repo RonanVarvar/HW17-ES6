@@ -1,0 +1,14 @@
+.c-body {
+  background-color: limegreen;
+  font-family: Arial;
+}
+
+.c-client, .c-card, .c-payment {
+  text-align: right;
+  width: 500px;
+  color: white;
+}
+
+.c-client__info, .c-card__info, .c-payment__info {
+  height: 60px;
+}

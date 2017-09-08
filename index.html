@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>HW 17 ES6</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body class="c-body">
+    <form class="c-client" name="client">
+        <div class="c-client__item-container">
+            <label>First name: <input class="c-client__firstName" type="text" required></label>
+        </div>
+        <div class="c-client__item-container">
+            <label>Last name: <input class="c-client__lastName" type="text" required></label>
+        </div>
+        <div class="c-client__item-container">
+            <label>Address: <input class="c-client__address" type="text" required></label>
+        </div>
+        <div class="c-client__item-container">
+            <label>Phone: <input class="c-client__phone" type="text" placeholder="+38(099)999-99-99" required></label>
+        </div>
+        <div class="c-client__item-container">
+            <label>Client ID: <input class="c-client__id" type="text"></label>
+        </div>
+        <input type="button" class="c-client__create" value="create">
+        <input type="button" class="c-client__update" value="update">
+        <input type="button" class="c-client__delete" value="delete">
+        <input type="button" class="c-client__fetch" value="fetch data">
+        <div class="c-client__info"></div>
+    </form>
+
+    <form class="c-card" name="card">
+        <div class="c-card__item-container">
+            <label>number: <input class="c-card__number" type="text" name="cardcode"
+                                  pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}"
+                                  placeholder="XXXX XXXX XXXX XXXX" required>
+            </label>
+        </div>
+        <div class="c-card__item-container">
+            <label>expiry date: <input class="c-card__expirydate" type="text"  placeholder="mm/yy" required>
+            </label>
+        </div>
+        <div class="c-card__item-container">
+            <label>CVV code: <input class="c-card__CVV-code" type="text" maxlength="3"
+                                    placeholder="XXX" required>
+            </label>
+        </div>
+        <div class="c-card__item-container">
+            <label>Client: <input class="c-card__client" type="text" required></label>
+        </div>
+        <div class="c-card__item-container">
+            <label>Card ID: <input class="c-card__id" type="text"></label>
+        </div>
+        <input type="button" class="c-card__create" value="create">
+        <input type="button" class="c-card__update" value="update">
+        <input type="button" class="c-card__delete" value="delete">
+        <input type="button" class="c-client__fetch" value="fetch data">
+        <div class="c-card__info"></div>
+    </form>
+
+    <form class="c-payment" name="payment">
+        <div class="c-payment__item-container">
+            <label>senders card: <input class="c-payment__senders-card" type="text" name="cardcode"
+                                        pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}"
+                                        placeholder="XXXX XXXX XXXX XXXX" required></label>
+        </div>
+        <div class="c-payment__item-container">
+            <label>receivers card: <input class="c-payment__receivers-card" type="text" name="cardcode"
+                                          pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}"
+                                          placeholder="XXXX XXXX XXXX XXXX" required></label>
+        </div>
+        <div class="c-payment__item-container">
+            <label>amount: <input class="c-payment__amount" type="text" required></label>
+        </div>
+        <div class="c-payment__item-container">
+            <label>currency: <input class="c-payment__currency" type="text" list="currency" required></label>
+        </div>
+        <datalist id="currency">
+            <option>$</option>
+            <option>₴</option>
+            <option>₽</option>
+            <option>€</option>
+        </datalist>
+        <div class="c-payment__item-container">
+            <label>transaction ID: <input class="c-payment__id" type="text"></label>
+        </div>
+        <input type="button" class="c-payment__create" value="create">
+        <input type="button" class="c-payment__update" value="update">
+        <input type="button" class="c-payment__delete" value="delete">
+        <input type="button" class="c-payment__fetch" value="fetch data">
+        <div class="c-payment__info"></div>
+    </form>
+    
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
